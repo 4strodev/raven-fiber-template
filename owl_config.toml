@@ -1,0 +1,4 @@
+[scripts.onmount.universal]
+git_init = ["git init"]
+mod_init = ["go mod init {{ .ModuleName }}"]
+install_dependencies = ["go get github.com/gofiber/fiber/v2"]
