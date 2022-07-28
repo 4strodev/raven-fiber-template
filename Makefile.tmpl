@@ -1,0 +1,13 @@
+MAIN = ./cmd/server/{{ .ProjectName }}
+BIN = ./bin/{{ .ProjectName }}
+
+all: build
+
+build:
+	go build -o $(BIN) $(MAIN)
+
+dev:
+	CompileDaemon -build="make" -command="$(BIN)"
+
+clean:
+	rm -r ./bin
