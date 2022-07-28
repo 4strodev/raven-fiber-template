@@ -8,6 +8,6 @@ func init() {
     App = fiber.New()
 
     App.Get("/", func(c *fiber.Ctx) error {
-        return c.SendString("Hello world")
+        return c.SendString("{{ .ProjectName }} works!!")
     })
 }
