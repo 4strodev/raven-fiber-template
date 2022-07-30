@@ -7,7 +7,7 @@ build:
 	go build -o $(BIN) $(MAIN)
 
 dev:
-	CompileDaemon -build="make" -command="$(BIN)"
+	air
 
 clean:
 	rm -r ./bin
